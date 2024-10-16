@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: cyan;
+            
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin-top: 250px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .myButton {
+            background-color: #07449f;
+            border-radius: 28px;
+            border: 1px solid #07449f;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 16px;
+            padding: 16px 100px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f6627;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container mx-auto">
+            <div class="card shadow-lg">
+                <h2 class="text-center mb-4">Inicio de sesión</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Agrega tu correo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="Agrega tu contraseña">
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">
+                                Mantener sesión abierta
+                            </label>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="myButton">Iniciar Sesión</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
